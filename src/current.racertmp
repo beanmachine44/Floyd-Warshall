@@ -69,8 +69,6 @@ fn main() {
     			}
     		}
 
-    		print!("\t")
-
     		for j in range(0u, 6u) {
     			match pred[i][j] {
     				Vertex(x) => print!("{}\t", x),
@@ -111,17 +109,15 @@ fn main() {
 	for i in range(0u, 6u) {
 		for j in range(0u, 6u) {
 			match dist[i][j] {
-				Length(x) => print!("{}\t", x),
-				Infinity => print!("Ifnt\t")
+				Length(x) => print!("\t{}", x),
+				Infinity => print!("\tIfnt")
 			}
 		}
 
-		print!("\t")
-
 		for j in range(0u, 6u) {
 			match pred[i][j] {
-				Vertex(x) => print!("{}\t", x),
-				Null => print!("Null\t")
+				Vertex(x) => print!("\t{}", x),
+				Null => print!("\tNull")
 			}
 		}
 
