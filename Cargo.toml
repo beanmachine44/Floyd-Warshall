@@ -1,0 +1,5 @@
+[package]
+
+name = "Floyd-Warshall"
+version = "0.0.1"
+authors = ["beanmachine44 <beanmachine44@gmail.com>"]
